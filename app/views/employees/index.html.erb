@@ -1,0 +1,6 @@
+<%= link_to 'Créer', new_employee_path %>
+
+
+<% @employees.each do |employee| %>
+  <%= employee.name %> | <%= link_to 'Edit', edit_employee_path %> | <%= link_to 'Delete', employee_path %>
+<% end %>
